@@ -222,13 +222,6 @@ function App() {
                 <FontAwesomeIcon icon={faClock} />
                 <p>...</p>
               </div>
-
-              <div className={AppStyle.contactInfo}>
-                <FontAwesomeIcon icon={faGlobe} />
-                <Link href="" target="_blank" rel="">
-                  newvisionministryethiopia.vercel.app
-                </Link>
-              </div>
             </div>
           </div>
 
