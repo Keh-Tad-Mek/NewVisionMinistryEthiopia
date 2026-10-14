@@ -1,12 +1,10 @@
 import { useState } from 'react'
 import AppStyle from './App.module.css'
-import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons'
 import { faPhone } from '@fortawesome/free-solid-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faClock } from '@fortawesome/free-solid-svg-icons'
-import { faGlobe } from '@fortawesome/free-solid-svg-icons'
 
 
 
@@ -27,11 +25,11 @@ function App() {
           <h1>Ministry Ethiopia</h1>
         </div>
         <nav className={AppStyle.headerNav}>
-          <Link rel="stylesheet" href="">{language === 'EN' ? 'Mission' : 'ተልእኮ'}</Link>
-          <Link rel="stylesheet" href="">{language === 'EN' ? 'Vision' : 'ራእይ'}</Link>
-          <Link rel="stylesheet" href="">{language === 'EN' ? 'Objectives' : 'ዓላማዎች'}</Link>
-          <Link rel="stylesheet" href="">{language === 'EN' ? 'Core Values' : 'እሴቶች'}</Link>
-          <Link rel="stylesheet" href="">{language === 'EN' ? 'Contacts' : 'አግኙን'}</Link>
+          <a href="#mission">{language === 'EN' ? 'Mission' : 'ተልእኮ'}</a>
+          <a href="#vision">{language === 'EN' ? 'Vision' : 'ራእይ'}</a>
+          <a href="#objectives">{language === 'EN' ? 'Objectives' : 'ዓላማዎች'}</a>
+          <a href="#coreValues">{language === 'EN' ? 'Core Values' : 'እሴቶች'}</a>
+          <a href="#contacts">{language === 'EN' ? 'Contacts' : 'አግኙን'}</a>
         </nav>
         <div className={AppStyle.languageToggle}>
           <button
@@ -50,7 +48,7 @@ function App() {
           <p>{language === 'EN' ? 'Psalms 68:31' : 'መዝሙር 68:31'}</p>
       </div>
 
-      <div className={AppStyle.mission}>
+      <div id="mission" className={AppStyle.mission}>
         <div className={AppStyle.missionHeader}>
           <img className={AppStyle.logo} src="/missionLogo.png" alt="$ "/>
           <p id={AppStyle.missionHeaderTitle}>{language === 'EN' ? 'Our Mission' : 'ተልእኮአችን'}</p>
@@ -62,7 +60,7 @@ function App() {
         </p>
       </div>
 
-      <div className={AppStyle.vision}>
+      <div id="vision" className={AppStyle.vision}>
         <div className={AppStyle.visionHeader}>
           <img className={AppStyle.logo} src="/visionLogo.png" alt="$ "/>
           <p id={AppStyle.visionHeaderTitle}>{language === 'EN' ? 'Our Vision' : 'ራእያችን'}</p>
@@ -74,7 +72,7 @@ function App() {
         </p>
       </div>
 
-      <div className={AppStyle.objectives}>
+      <div id="objectives" className={AppStyle.objectives}>
         <div className={AppStyle.objectivesHeader}>
           <img className={AppStyle.logo} src="/objectivesTitleLogo.png" alt="$ "/>
           <p id={AppStyle.objectivesHeaderTitle}>{language === 'EN' ? 'Our Objectives' : 'ዓላማዎቻችን'}</p>
@@ -108,7 +106,7 @@ function App() {
         </div>
       </div>
 
-      <div className={AppStyle.coreValues}>
+      <div id="coreValues" className={AppStyle.coreValues}>
           <p id={AppStyle.coreValuesHeader}>{language === 'EN' ? 'Our Core Values' : 'እሴቶቻችን'}</p>
           <div className={AppStyle.upperGridCoreValues}>
             <div className={AppStyle.value}>
@@ -194,7 +192,7 @@ function App() {
           </div>
       </div>
 
-      <div className={AppStyle.contactContainer}>
+      <div id="contacts" className={AppStyle.contactContainer}>
         <div className={AppStyle.contact}>
           <h2>{language === 'EN' ? 'Contact Us' : 'አግኙን'}</h2>
 
