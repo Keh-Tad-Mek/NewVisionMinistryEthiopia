@@ -5,7 +5,7 @@ import { faLocationDot } from '@fortawesome/free-solid-svg-icons'
 import { faPhone } from '@fortawesome/free-solid-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faClock } from '@fortawesome/free-solid-svg-icons'
-
+import { faFacebook, faTelegram } from '@fortawesome/free-brands-svg-icons'
 
 
 function App() {
@@ -37,10 +37,10 @@ function App() {
             onClick={handleLanguageToggle}
           >
             <div className={AppStyle.thumb}>{language}</div>
-            
           </button>
         </div>
       </header>
+
       <div className={AppStyle.hero}>
           <p>{language === 'EN' ? 'Ethiopia shall soon' : 'ኢትዮጵያ እጆችዋን'}</p>
           <p>{language === 'EN' ? 'stretch out her hands' : 'ወደ እግዚአብሔር'}</p>
@@ -50,58 +50,67 @@ function App() {
 
       <div id="mission" className={AppStyle.mission}>
         <div className={AppStyle.missionHeader}>
-          <img className={AppStyle.logo} src="/missionLogo.png" alt="$ "/>
+          <img className={AppStyle.logo} src="/missionLogo.png" alt="" />
           <p id={AppStyle.missionHeaderTitle}>{language === 'EN' ? 'Our Mission' : 'ተልእኮአችን'}</p>
         </div>
         <p>
           {language === 'EN'
-            ? 'We empower communities in Northern Ethiopia and Eritrea to build lasting peace through training, workshops, grassroots movements, and reconciliation.'
-            : 'በሰሜን ኢትዮጵያና በኤርትራ አካባቢዎች ለሚኖሩ የማኅበረሰብ ክፍሎች የእርቀ-ሰላም ሥልጠናዎችን፣ እውደጥናቶችን፣ ኮንፍራንሶችንና የሰላም ንቅናቄዎችን በመፍጠር በሰላም እንዲኖሩ ማገዝ።'}
+            ? 'To transform Northern Ethiopia community through biblical peace building and demonstrating Christlike love by developing leaders.'
+            : 'የሰሜን ኢትዮጵያን ማህበረሰብ በመጽሐፍ ቅዱሳዊ የሰላም ግንባታ እና ክርስቶስን የመሰለ ፍቅርን በማሳየት መሪዎችን በማፍራት መለወጥ።'}
         </p>
       </div>
 
       <div id="vision" className={AppStyle.vision}>
         <div className={AppStyle.visionHeader}>
-          <img className={AppStyle.logo} src="/visionLogo.png" alt="$ "/>
+          <img className={AppStyle.logo} src="/visionLogo.png" alt="" />
           <p id={AppStyle.visionHeaderTitle}>{language === 'EN' ? 'Our Vision' : 'ራእያችን'}</p>
         </div>
         <p>
           {language === 'EN'
-            ? 'We plan to see the people of Northern Ethiopia and Eritrea transformed and renewed through the Gospel of Peace by 2060.'
-            : 'በ2060 ዓ.ም የሰሜን ኢትዮጵያና የኤርትራ አካባቢ ሕዝቦች በሰላም ወንጌል ታድሰው ማየት።'}
+            ? 'To see transformed community in Northern Ethiopia through biblical peace building, love, and leadership development.'
+            : 'በሰሜን ኢትዮጵያ የተለወጠ ማህበረሰብን በመጽሐፍ ቅዱሳዊ የሰላም ግንባታ፣ በፍቅር እና በመሪነት እድገት ማየት።'}
         </p>
       </div>
 
       <div id="objectives" className={AppStyle.objectives}>
         <div className={AppStyle.objectivesHeader}>
-          <img className={AppStyle.logo} src="/objectivesTitleLogo.png" alt="$ "/>
+          <img className={AppStyle.logo} src="/objectivesTitleLogo.png" alt="" />
           <p id={AppStyle.objectivesHeaderTitle}>{language === 'EN' ? 'Our Objectives' : 'ዓላማዎቻችን'}</p>
         </div>
 
         <div className={AppStyle.objective}>
-          <img className={AppStyle.logo} src="/blackCheckMark.png" alt="$ " />
+          <img className={AppStyle.logo} src="/blackCheckMark.png" alt="" />
           <p>
             {language === 'EN'
-              ? 'Mobilize Communities: Foster sustainable grassroots peace movements across Northern Ethiopia and Eritrea.'
-              : 'በሰሜን ኢትዮጵያና ኤርትራ አካባቢ ለሚኖሩ ማኅበረሰብ የሰላም ንቅናቄ መፍጠር።'}
+              ? 'To lead people in Northern Ethiopia to reconciliation with God through Jesus Christ by promoting Gospel outreach, evangelism, and discipleship.'
+              : 'በሰሜን ኢትዮጵያ ያሉ ሰዎችን ወንጌልን በማስፋፋት፣ በወንጌላዊነት እና በደቀ መዝሙርነት በኢየሱስ ክርስቶስ ከእግዚአብሔር ጋር ወደ እርቀ-ሰላም መምራት።'}
           </p>
         </div>
 
         <div className={AppStyle.objective}>
-          <img className={AppStyle.logo} src="/blackCheckMark.png" alt="$ " />
+          <img className={AppStyle.logo} src="/blackCheckMark.png" alt="" />
           <p>
             {language === 'EN'
-              ? 'Promote Peace Awareness: Build lasting peace through training, dialogue, and digital campaigns.'
-              : 'ለሰሜን ኢትዮጵያ ማኅበረሰብ ስለ እውነተኛና ቋሚ-ሰላም በስልጠና፣ በወይይትና በማኅበራዊ ሚዲያ ግንዛቤ መፍጠር።'}
+              ? 'To promote biblical peacebuilding, forgiveness, dialogue, and reconciliation among individuals, churches, and communities in Northern Ethiopia.'
+              : 'በሰሜን ኢትዮጵያ በግለሰቦች፣ በአብያተ ክርስቲያናት እና በማኅበረሰቦች መካከል መጽሐፍ ቅዱሳዊ የሰላም ግንባታን፣ ይቅርታን፣ ውይይትን እና እርቀ-ሰላምን ማስፋፋት።'}
           </p>
         </div>
 
         <div className={AppStyle.objective}>
-          <img className={AppStyle.logo} src="/blackCheckMark.png" alt="$ " />
+          <img className={AppStyle.logo} src="/blackCheckMark.png" alt="" />
           <p>
             {language === 'EN'
-              ? 'Build Strategic Partnerships: Work with key stakeholders to strengthen reconciliation and resolve intergroup conflicts peacefully.'
-              : 'በቡድኖች መካከል የሚነሱ ግጭቶች በእርቀ-ሰላም እንዲቋጩ ከሚመለከታቸው አጋር አካላት ጋር የእርቀ-ሰላም አስፈላጊነትን ሚና መጫዎት።'}
+              ? 'To demonstrate Christlike love through compassionate service, mutual respect, and collaborative initiatives that strengthen relationships and community well-being.'
+              : 'ክርስቶስን የመሰለ ፍቅርን በርኅራኄ አገልግሎት፣ በጋራ መከባበር እና ግንኙነቶችን እና የማኅበረሰብን ደህንነት በሚያጠናክሩ የትብብር ተነሳሽነቶች ማሳየት።'}
+          </p>
+        </div>
+
+        <div className={AppStyle.objective}>
+          <img className={AppStyle.logo} src="/blackCheckMark.png" alt="" />
+          <p>
+            {language === 'EN'
+              ? 'To equip and mentor emerging church and community leaders in biblical peacebuilding, servant leadership, and reconciliation to foster lasting transformation in Northern Ethiopia.'
+              : 'በሰሜን ኢትዮጵያ ዘላቂ ለውጥን ለማምጣት በመጽሐፍ ቅዱሳዊ የሰላም ግንባታ፣ በአገልጋይነት አመራር እና በእርቀ-ሰላም የሚያድጉ የቤተ ክርስቲያን እና የማኅበረሰብ መሪዎችን ማሠልጠን እና ማማከር።'}
           </p>
         </div>
       </div>
@@ -109,83 +118,44 @@ function App() {
       <div id="coreValues" className={AppStyle.coreValues}>
           <p id={AppStyle.coreValuesHeader}>{language === 'EN' ? 'Our Core Values' : 'እሴቶቻችን'}</p>
           <div className={AppStyle.upperGridCoreValues}>
+
             <div className={AppStyle.value}>
-              <img className={AppStyle.logo} src="/peaceWithGod.png" alt="" />
-              <p className={AppStyle.valueTitle}>{language === 'EN' ? 'Peace with God' : 'ሰላም ከእግዚአብሔር ጋር'}</p>
+              {/* Image placeholder — add src when you have it */}
+              <img className={AppStyle.valueIcon} src="/peaceWithGod.png" alt="" />              <p className={AppStyle.valueTitle}>{language === 'EN' ? 'Peace with God' : 'ሰላም ከእግዚአብሔር ጋር'}</p>
               <p className={AppStyle.valueBody}>
                 {language === 'EN'
-                  ? <>Come find rest. <br />Leave with peace. <br />Walk in grace</>
-                  : <>እረፍትን አግኙ። <br />በሰላም ተለዩ። <br />በጸጋ ተመላለሱ።</>}
+                  ? <>We believe reconciliation with God through Jesus Christ is the foundation of true and lasting peace.</>
+                  : <>በኢየሱስ ክርስቶስ ከእግዚአብሔር ጋር የሚደረግ እርቀ-ሰላም የእውነተኛና ዘላቂ ሰላም መሠረት ነው ብለን እናምናለን።</>}
               </p>
             </div>
 
             <div className={AppStyle.value}>
-              <img className={AppStyle.logo} src="/permanentPeace.png" alt="" 
-                style={{
-                  width: '60px',
-                  height: '60px'
-                }}
-              />
-              <p className={AppStyle.valueTitle}>{language === 'EN' ? 'Permanent Peace' : 'ቋሚ ሰላም'}</p>
+              <img className={AppStyle.valueIcon} src="/peaceWithAll.png" alt="" />
+              <p className={AppStyle.valueTitle}>{language === 'EN' ? 'Peace with Others' : 'ሰላም ከሰዎች ጋር'}</p>
               <p className={AppStyle.valueBody}>
                 {language === 'EN'
-                  ? <>Peace with God <br />Peace that never ends.</>
-                  : <>ሰላም ከእግዚአብሔር ጋር <br />የማያልቅ ሰላም።</>}
+                  ? <>We promote forgiveness, reconciliation, and peaceful relationships among individuals and communities.</>
+                  : <>በግለሰቦች እና በማኅበረሰቦች መካከል ይቅርታን፣ እርቀ-ሰላምን እና ሰላማዊ ግንኙነቶችን እናበረታታለን።</>}
               </p>
             </div>
 
             <div className={AppStyle.value}>
-              <img className={AppStyle.logo} src="/permanentJoy.png" alt="" />
-              <p className={AppStyle.valueTitle}>{language === 'EN' ? 'Permanent Joy' : 'ቋሚ ደስታ'}</p>
-              <p className={AppStyle.valueBody}>
-                {language === 'EN'
-                  ? <>The joy that surpasses <br />understanding. The joy that <br />never passes away.</>
-                  : <>ከሁሉ የሚበልጥ ደስታ <br />የማያልፍ ደስታ።</>}
-              </p>
-            </div>
-
-            <div className={AppStyle.value}>
-              <img className={AppStyle.logo} src="/love.png" alt="" />
+              <img className={AppStyle.valueIcon} src="/love.png" alt="" />
               <p className={AppStyle.valueTitle}>{language === 'EN' ? 'Love' : 'ፍቅር'}</p>
               <p className={AppStyle.valueBody}>
                 {language === 'EN'
-                  ? <>Love that holds the soul. <br />Love that spans the ages. <br />Love that never fades.</>
-                  : <>ነፍስን የሚይዝ ፍቅር። <br />ዘመናትን የሚሻገር ፍቅር። <br />የማይጠፋ ፍቅር።</>}
-              </p>
-            </div>
-          </div>
-
-
-          <div className={AppStyle.lowerGridCoreValues}>
-            <div className={AppStyle.value}>
-              <img className={AppStyle.logo} src="/valuingPeace.png" alt="" />
-              <p className={AppStyle.valueTitle}>{language === 'EN' ? 'Valuing Peace' : 'ለሰላም ዋጋ መስጠት'}</p>
-              <p className={AppStyle.valueBody}>
-                {language === 'EN'
-                  ? <>Come find rest. <br />Leave with peace. <br />Walk in grace</>
-                  : <>እረፍትን አግኙ። <br />በሰላም ተለዩ። <br />በጸጋ ተመላለሱ።</>}
+                  ? <>We demonstrate the love of Jesus through compassion, humility, service, and respect for others.</>
+                  : <>የኢየሱስን ፍቅር በርኅራኄ፣ በትህትና፣ በአገልግሎት እና ሌሎችን በማክበር እናሳያለን።</>}
               </p>
             </div>
 
             <div className={AppStyle.value}>
-              <img className={AppStyle.logo} src="/peacefulCommunication.png" alt="" />
-              <p className={AppStyle.valueTitle}>{language === 'EN' ? 'Peaceful Communication' : 'ሰላማዊ ተግባቦት'}</p>
+              <img className={AppStyle.valueIcon} src="/leadership.png" alt="" />
+              <p className={AppStyle.valueTitle}>{language === 'EN' ? 'Leadership Development' : 'የመሪነት እድገት'}</p>
               <p className={AppStyle.valueBody}>
                 {language === 'EN'
-                  ? <>Come find rest. <br />Leave with peace. <br />Walk in grace</>
-                  : <>እረፍትን አግኙ። <br />በሰላም ተለዩ። <br />በጸጋ ተመላለሱ።</>}
-              </p>
-            </div>
-
-            <div className={AppStyle.value}>
-              <img className={AppStyle.logo} src="/peaceWithAll.png" alt="" />
-              <p className={AppStyle.valueTitle}>
-                {language === 'EN' ? <>Living in peace <br />with all people.</> : <>ከሰው ሁሉ ጋር <br />በሰላም መኖር።</>}
-              </p>
-              <p className={AppStyle.valueBody}>
-                {language === 'EN'
-                  ? <>Living peacefully. <br />Loving freely. <br />Reaching everyone</>
-                  : <>በሰላም መኖር። <br />በነጻነት መውደድ። <br />ሁሉንም መድረስ።</>}
+                  ? <>We equip and mentor emerging leaders to serve faithfully and transform churches and communities.</>
+                  : <>በታማኝነት እንዲያገለግሉ እና አብያተ ክርስቲያናትንና ማኅበረሰቦችን እንዲለውጡ የሚያድጉ መሪዎችን እናሠለጥናለን፣ እናማክራለን።</>}
               </p>
             </div>
 
@@ -196,42 +166,47 @@ function App() {
         <div className={AppStyle.contact}>
           <h2>{language === 'EN' ? 'Contact Us' : 'አግኙን'}</h2>
 
-          <div className={AppStyle.contactBody}>  
+          <div className={AppStyle.contactBody}>
             <div className={AppStyle.left}>
               <div className={AppStyle.contactInfo}>
-                <FontAwesomeIcon icon={faLocationDot} />
-                <p>...</p>
+                <FontAwesomeIcon id={AppStyle.invisibleIcon} icon={faClock} />
+                <p>Abebe Mokyalew — {language === 'EN' ? 'Director' : 'ዳይሬክተር'}</p>
+              </div>
+              
+              <div className={AppStyle.contactInfo}>
+                <FontAwesomeIcon icon={faPhone} />
+                <p>+251 982 691 992 (Bahir Dar)</p>
               </div>
 
               <div className={AppStyle.contactInfo}>
                 <FontAwesomeIcon icon={faPhone} />
-                <p>+251 900 000 000</p>
+                <p>+251 920 345 655 (Addis Ababa)</p>
               </div>
 
               <div className={AppStyle.contactInfo}>
                 <FontAwesomeIcon icon={faEnvelope} />
-                <p>...</p>
+                <p>newvisionem2026@gmail.com</p>
               </div>
-
             </div>
 
             <div className={AppStyle.right}>
+
               <div className={AppStyle.contactInfo}>
-                <FontAwesomeIcon icon={faClock} />
-                <p>...</p>
+                <FontAwesomeIcon icon={faTelegram}></FontAwesomeIcon>
+                <p>{language === 'EN' ? 'New Vision Ethiopia Ministry' : 'New Vision Ethiopia Ministry'}</p>
+              </div>
+
+              <div className={AppStyle.contactInfo}>
+                <FontAwesomeIcon icon={faFacebook}></FontAwesomeIcon>
+                <p>{language === 'EN' ? 'New Vision Ethiopia Ministry' : 'New Vision Ethiopia Ministry'}</p>
               </div>
             </div>
           </div>
-
-
         </div>
       </div>
 
-
-      
-      
     </div>
-    
+
   )
 }
 

@@ -183,6 +183,12 @@ header {
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
     transition: 0.2s ease;
+    padding: 20px;
+    text-align: center;
+}
+
+.valueBody {
+    width: 100%;
 }
 
 .value:hover {
@@ -270,19 +276,27 @@ header {
     color: #0a51eb;
 }
 
+.valueIconPlaceholder {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.valueIcon {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+#invisibleIcon {
+    visibility: hidden;
+}
+
 /* Half PC screen (approx. 1024px and below) */
 @media (max-width: 1024px) {
     .coreValues {
         padding: 0 20px;
-    }
-
-    .value {
-        width: 100%;
-        max-width: 280px;
-        height: auto;
-        min-height: 220px;
-        padding: 20px;
-        box-sizing: border-box;
     }
 
     .upperGridCoreValues,
@@ -290,6 +304,15 @@ header {
         gap: 20px;
         flex-wrap: wrap;
         justify-content: center;
+        align-items: stretch;
+    }
+
+    .value {
+        width: 100%;
+        max-width: 280px;
+        height: 284px;
+        padding: 20px;
+        box-sizing: border-box;
     }
 
     .valueTitle {
