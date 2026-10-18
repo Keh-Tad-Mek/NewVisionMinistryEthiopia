@@ -193,12 +193,12 @@ function App() {
 
               <div className={AppStyle.contactInfo}>
                 <FontAwesomeIcon icon={faTelegram}></FontAwesomeIcon>
-                <p>{language === 'EN' ? 'New Vision Ethiopia Ministry' : 'New Vision Ethiopia Ministry'}</p>
+                <a href="https://t.me/+nI0zDekvRvE5MjE0" target="_blank">https://t.me/+nI0zDekvRvE5MjE0</a>
               </div>
 
               <div className={AppStyle.contactInfo}>
                 <FontAwesomeIcon icon={faFacebook}></FontAwesomeIcon>
-                <p>{language === 'EN' ? 'New Vision Ethiopia Ministry' : 'New Vision Ethiopia Ministry'}</p>
+                <a href="https://www.facebook.com/share/1Dj8QFPQJv/" target="_blank">https://www.facebook.com/share/1Dj8QFPQJv/</a>
               </div>
             </div>
           </div>
